@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="BOOTSTRAP/css/bootstrap.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="questionpage.css" />
+    <!-- <script  src="questions.js"></script> -->
+    <script type="text/javascript" src="jquery-3.6.0.slim.min.js"></script>
+    <title>Question Page</title>
+  </head>
+  <body>
+    
+    <!-- <nav class="navbar navbar fixed-top"> -->
+      <div class ="row" style="background-color:rgb(0, 0, 0); color:white">
+     <div id= "name" style="font-size:20px"><div> Welcome _______  </div></div> <div id= "timer" style= "margin-right:100px;"> <div id="demo" ></div> <progress value="0" max = "1199" id ="progressBar"></progress></div></div>
+    <!-- </nav> -->
+ <!-- <div class="container-fluid"> -->
+ 
+    <div  id="questionSection">
+      <div class="question" id="question1"></div>
+      <div class="question" id="question2"></div>
+      <div class="question" id="question3"></div>
+      <div class="question" id="question4"></div>
+      <div class="question" id="question5"></div>
+      <div class="question" id="question6"></div>
+      <div class="question" id="question7"></div>
+      <div class="question" id="question8"></div>
+      <div class="question" id="question9"></div>
+      <div class="question" id="question10"></div>
+      <div class="question" id="question11"></div>
+      <div class="question" id="question12"></div>
+      <div class="question" id="question13"></div>
+      <div class="question" id="question14"></div>
+      <div class="question" id="question15"></div>
+      <div class="question" id="question16"></div>
+      <div class="question" id="question17"></div>
+      <div class="question" id="question18"></div>
+      <div class="question" id="question19"></div>
+      <div class="question" id="question20"></div>
+      <div class="question" id="question21"></div>
+      <div class="question" id="question22"></div>
+      <div class="question" id="question23"></div>
+      <div class="question" id="question24"></div>
+      <div class="question" id="question25"></div>
+      <div class="question" id="question26"></div>
+      <div class="question" id="question27"></div>
+      <div class="question" id="question28"></div>
+      <div class="question" id="question29"></div>
+      <div class="question" id="question30"></div>
+      <div class="question" id="question31"></div>
+      <div class="question" id="question32"></div>
+      <div class="question" id="question33"></div>
+      <div class="question" id="question34"></div>
+      <div class="question" id="question35"></div>
+      <div class="question" id="question36"></div>
+      <div class="question" id="question37"></div>
+      <div class="question" id="question38"></div>
+      <div class="question" id="question39"></div>
+      <div class="question" id="question40"></div>
+      <div class="question" id="question41"></div>
+      <div class="question" id="question42"></div>
+      <div class="question" id="question43"></div>
+      <div class="question" id="question44"></div>
+      <div class="question" id="question45"></div>
+      <div class="question" id="question46"></div>
+      <div class="question" id="question47"></div>
+      <div class="question" id="question48"></div>
+      <div class="question" id="question49"></div>
+      <div class="question" id="question50"></div>
+    </div>
+   
+    <div class="row" id="navigateQuestions">
+      <div class="col-sm-offset-3 col-sm-6 col-lg-offset-6 col-lg-12" style ="position: relative;">
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          01
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          02
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          03
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          04
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          05
+        </button>
+      </div>
+      <div class="col-sm-offset-3 col-sm-6 col-lg-offset-6 col-lg-12" style ="position: relative;">
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          06
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          07
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          08
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          09
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          10
+        </button>
+      </div>
+      <div class="col-sm-offset-3 col-sm-6 col-lg-offset-6 col-lg-12">
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          11
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          12
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          13
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          14
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          15
+        </button>
+      </div>
+      <div class="col-sm-offset-3 col-sm-6 col-lg-offset-6 col-lg-12">
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          16
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          17
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          18
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          19
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          20
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          21
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          22
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          23
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          24
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          25
+        </button>
+      </div>
+      <div class="col-sm-offset-3 col-sm-6 col-lg-offset-6 col-lg-12" style ="position: relative;">
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          26
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          27
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          28
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          29
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          30
+        </button>
+      </div>
+      <div class="col-sm-offset-3 col-sm-6 col-lg-offset-6 col-lg-12">
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          31
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          32
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          33
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          34
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          35
+        </button>
+      </div>
+      <div class="col-sm-offset-3 col-sm-6 col-lg-offset-6 col-lg-12">
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          36
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          37
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          38
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          39
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          40
+        </button>
+      </div>
+      <div class="col-sm-offset-3 col-sm-6 col-lg-offset-6 col-lg-12">
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          41
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          42
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          43
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          44
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          45
+        </button>
+      </div>
+      <div class="col-sm-offset-3 col-sm-6 col-lg-offset-6 col-lg-12">
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          46
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          47
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          48
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          49
+        </button>
+        <button type="button" class="btn btn-success btn-lg btn-absolute">
+          50
+        </button>
+      </div>
+    </div>
+ 
+    <script >
+      
+    let timeleft = 1799
+    let minutes = 29;
+    let seconds = 10
+   
+      function timer() {
+         
+   document.getElementById("progressBar").value = timeleft
+    document.getElementById("demo").innerHTML =  minutes+ "m " + seconds + "s ";
+    timeleft -= 1
+ 
+ //console.log(minutes, seconds, timeleft)
+
+    if (seconds == 0){
+      minutes -=1
+      seconds = 60
+    }
+      
+    if (seconds <= 59 && minutes == 0) 
+	   {
+		 document.getElementById("demo").style.color = "red";  
+     document.getElementById("progressBar").style.accentColor = "red";
+	   }
+    seconds -= 1
+  
+    // If the count down is finished, redirect to another page
+    if ( minutes == 0 && seconds == 0) {
+      location.href = "./resultsubmitted.html"
+      clearInterval("timer()");
+     // document.getElementById("demo").innerHTML = "Time up";
+            
+    }
+ 
+  }
+   setInterval("timer();", 1000);
+
+
+
+
+    
+    const  questions= [
+        {
+          question: "I am question 1",
+          option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+            },
+        {
+          question: "I am question 2",
+         
+            option1: { choice: "i am a wrong answer", value: 0 },
+            option2: { choice: "i am a correct answer", value: 1 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+         
+        },
+        {
+          question: "I am question 3",
+         
+            option1: { choice: "i am a wrong answer", value: 0 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a correct answer", value: 1 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+      
+        },
+        {
+          question: "I am question 4",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        }, 
+        {
+          question: "I am question 5",
+       
+            option1: { choice: "i am a wrong answer", value: 0  },
+            option2: { choice: "i am a  correct answer", value: 1  },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 6",
+       
+            option1: { choice: "i am a wrong answer", value: 0},
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a  correct answer", value: 1  },
+     
+        } ,
+        {
+          question: "I am question 7",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 8",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 9",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am the wrong answer", value: 0 },
+     
+        },
+        {
+          question: "I am question 10",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 11",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        },
+        {
+          question: "I am question 12",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 13",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 14",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        },
+        {
+          question: "I am question 15",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 16",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 17",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 18",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+         
+        {
+          question: "I am question 19",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        }  ,
+        {
+          question: "I am question 20",
+       
+            option1: { choice: "i am the wrong answer", value: 0  },
+            option2: { choice: "i am the correct answer", value: 1  },
+            option3: { choice: "i am the wrong answer", value: 0 },
+            option4: { choice: "i am the wrong answer", value: 0 },
+     
+        }  ,
+        {
+          question: "I am question 21",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+         
+        {
+          question: "I am question 22",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        }  ,
+        {
+          question: "I am question 23",
+       
+            option1: { choice: "i am the wrong answer", value: 0  },
+            option2: { choice: "i am the correct answer", value: 1  },
+            option3: { choice: "i am the wrong answer", value: 0 },
+            option4: { choice: "i am the wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 24",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+         
+        {
+          question: "I am question 25",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        }  ,
+       
+        {
+          question: "I am question 26",
+          option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+            },
+        {
+          question: "I am question 27",
+         
+            option1: { choice: "i am a wrong answer", value: 0 },
+            option2: { choice: "i am a correct answer", value: 1 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+         
+        },
+        {
+          question: "I am question 28",
+         
+            option1: { choice: "i am a wrong answer", value: 0 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a correct answer", value: 1 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+      
+        },
+        {
+          question: "I am question 29",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        }, 
+        {
+          question: "I am question 30",
+       
+            option1: { choice: "i am a wrong answer", value: 0  },
+            option2: { choice: "i am a  correct answer", value: 1  },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 31",
+       
+            option1: { choice: "i am a wrong answer", value: 0},
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a  correct answer", value: 1  },
+     
+        } ,
+        {
+          question: "I am question 32",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 33",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 34",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am the wrong answer", value: 0 },
+     
+        },
+        {
+          question: "I am question 35",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 36",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        },
+        {
+          question: "I am question 37",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 38",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 39",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        },
+        {
+          question: "I am question 40",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 41",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 42",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 43",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+         
+        {
+          question: "I am question 44",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        }  ,
+        {
+          question: "I am question 45",
+       
+            option1: { choice: "i am the wrong answer", value: 0  },
+            option2: { choice: "i am the correct answer", value: 1  },
+            option3: { choice: "i am the wrong answer", value: 0 },
+            option4: { choice: "i am the wrong answer", value: 0 },
+     
+        }  ,
+        {
+          question: "I am question 46",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+         
+        {
+          question: "I am question 47",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        }  ,
+        {
+          question: "I am question 48",
+       
+            option1: { choice: "i am the wrong answer", value: 0  },
+            option2: { choice: "i am the correct answer", value: 1  },
+            option3: { choice: "i am the wrong answer", value: 0 },
+            option4: { choice: "i am the wrong answer", value: 0 },
+     
+        } ,
+        {
+          question: "I am question 49",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        } ,
+         
+        {
+          question: "I am question 50",
+       
+            option1: { choice: "i am a correct answer", value: 1 },
+            option2: { choice: "i am a wrong answer", value: 0 },
+            option3: { choice: "i am a wrong answer", value: 0 },
+            option4: { choice: "i am a wrong answer", value: 0 },
+     
+        }  
+               
+      ];
+      
+
+    
+const arrayOfFormattedQuestions = []
+
+for (let i=0; i<questions.length; i++ ){
+ 
+  const formattedQuestions = `<div class = "list group-item"><h2>${questions[i].question}</h2></div>
+        <div class ="radiowrapper" >
+        <input type = "radio" id= "radio1" name="flexRadioDefault" >
+        <label for="radio1"><h3>${questions[i].option1.choice}</h3></label> 
+        </div>
+        <div class ="radiowrapper"  >
+        <input type = "radio" id= "radio1" name="flexRadioDefault" >
+        <label for="radio1"><h3>${questions[i].option2.choice}</h3></label> 
+        </div>
+        <div class ="radiowrapper" >
+        <input type = "radio" id= "radio1" name="flexRadioDefault" >
+        <label for="radio1"><h3>${questions[i].option3.choice}</h3></label> 
+        </div> 
+        <div class ="radiowrapper" >
+        <input type = "radio" id= "radio1" name="flexRadioDefault" >
+        <label for="radio1"><h3>${questions[i].option4.choice}</h3></label> 
+        </div>
+        `;      
+              
+    arrayOfFormattedQuestions.push(formattedQuestions)
+           //console.log(formattedQuestions)
+}
+
+
+//console.log(arrayOfFormattedQuestions)
+
+const arrayOfQuestionsDiv = []
+
+for (let i =0; i< 50; i++){
+        arrayOfQuestionsDiv.push(document.getElementById("question" + `${i+1}`))
+     console.log(arrayOfQuestionsDiv)
+    }
+      
+// const arrayOfQuestionsDiv = [
+//   document.getElementById("question1"),
+//   document.getElementById("question2"),
+//   document.getElementById("question3"),
+//   document.getElementById("question4"),
+//   document.getElementById("question5"),
+//   document.getElementById("question6"),
+//   document.getElementById("question7"),
+//   document.getElementById("question8"),
+//   document.getElementById("question9"),
+//   document.getElementById("question10"),
+//   document.getElementById("question11"),
+//   document.getElementById("question12"),
+//   document.getElementById("question13"),
+//   document.getElementById("question14"),
+//   document.getElementById("question15"),
+//   document.getElementById("question16"),
+//   document.getElementById("question17"),
+//   document.getElementById("question18"),
+//   document.getElementById("question19"),
+//   document.getElementById("question20")
+// ]
+
+//document.getElementById("question20") = arrayOfFormattedQuestions[19]
+//console.log(document.getElementById("question20").id )
+// 
+ 
+
+    function randomIndex  (max){
+
+      return Math.floor(Math.random()*max)
+    } 
+      // swap function
+      function swap  (arr, i, j){
+         let temp = arr[i]
+         arr[i] = arr[j]
+         arr[j] = temp
+      }
+
+      function shuffle (arr){
+         for( let slot = arr.length -1; slot>0; slot--){
+               let element = randomIndex(slot+1);
+               swap(arr,element,slot)     
+         }
+         return arr
+      }
+
+     shuffle(arrayOfFormattedQuestions)
+  
+for (let i=0; i< arrayOfQuestionsDiv.length; i++){
+
+arrayOfQuestionsDiv[i].innerHTML = arrayOfFormattedQuestions[i] 
+} 
+
+
+    //   document.getElementById("question20").innerHTML = formattedQuestions;
+    </script>
+     <script  src="questions.js"></script>
+  </body>
+</html>
