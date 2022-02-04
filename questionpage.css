@@ -16,7 +16,7 @@ body{
 
 #navigateQuestions{
     position:absolute ;
-    height: 40%;
+    height: inherit;
     width: 90%;
     border-radius: 10px;
     background-color: #87bd87;
@@ -77,7 +77,7 @@ body{
 }
 
 .question{
-    position: absolute;
+    position: block;
     width: 89.3%;
     height: 47%;
     background-color: #5cb85c;
