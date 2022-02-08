@@ -1,266 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="BOOTSTRAP/css/bootstrap.min.css"
-    />
-    <link type="text/css" rel="stylesheet" href="questionpage.css" />
-    <!-- <script  src="questions.js"></script> -->
-        <script type="text/javascript" src="jquery-3.6.0.slim.min.js"></script>
-       
-    <title>Question Page</title>
-  </head>
-  <body>
-    
-    <!-- <nav class="navbar navbar fixed-top"> -->
-      <div class ="row" style="background-color:rgb(0, 0, 0); color:white; position: sticky; top: 0; z-index: 1; overflow: hidden; ">
-         <div id= "name" style="font-size:20px; margin-left:100px;" > 
-     </div>
-     <div id= "timer" style= "margin-right:100px;">
-       <div id="demo" > </div>
-        <progress value="0" max = "1799" id ="progressBar"></progress>
-      </div>
-    </div>
-    
-    <!-- </nav> -->
- <!-- <div class="container-fluid"> -->
- 
-  
-      <div class="questionSection" id="question1" style="display:block" ></div>
-      <div class="questionSection" id="question2" style="display:none" ></div>
-      <div class="questionSection" id="question3" style="display:none" ></div>
-      <div class="questionSection" id="question4" style="display:none"></div>
-      <div class="questionSection" id="question5" style="display:none"></div>
-      <div class="questionSection" id="question6" style="display:none"></div>
-      <div class="questionSection" id="question7" style="display:none"></div>
-      <div class="questionSection"id="question8" style="display:none"></div>
-      <div class="questionSection"id="question9" style="display:none"></div>
-      <div class="questionSection" id="question10" style="display:none"></div>
-      <div class="questionSection" id="question11" style="display:none"></div>
-      <div class="questionSection" id="question12" style="display:none"></div>
-      <div class="questionSection" id="question13" style="display:none"></div>
-      <div class="questionSection" id="question14" style="display:none"></div>
-      <div class="questionSection" id="question15" style="display:none"></div>
-      <div class="questionSection" id="question16" style="display:none"></div>
-      <div class="questionSection" id="question17" style="display:none"></div>
-      <div class="questionSection" id="question18"  style="display:none"></div>
-      <div class="questionSection" id="question19" style="display:none"></div>
-      <div class="questionSection" id="question19" style="display:none"></div>
-      <div class="questionSection" id="question19" style="display:none"></div>
-      <div class="questionSection" id="question19" style="display:none"></div>
-      <div class="questionSection" id="question19" style="display:none"></div>
-      <div class="questionSection" id="question19" style="display:none"></div>
-      <div class="questionSection" id="question19" style="display:none"></div>
-      <div class="questionSection" id="question20" style="display:none"></div>
-      <div class="questionSection" id="question21" style="display:none"></div>
-      <div class="questionSection" id="question22" style="display:none"></div>
-      <div class="questionSection" id="question23" style="display:none"></div>
-      <div class="questionSection" id="question24" style="display:none"></div>
-      <div class="questionSection" id="question25" style="display:none"></div>
-      <div class="questionSection" id="question26" style="display:none"></div>
-      <div class="questionSection" id="question27" style="display:none"></div>
-      <div class="questionSection" id="question28" style="display:none"></div>
-      <div class="questionSection" id="question29" style="display:none"></div>
-      <div class="questionSection" id="question30" style="display:none"></div>
-      <div class="questionSection" id="question31" style="display:none"></div>
-      <div class="questionSection" id="question32" style="display:none"></div>
-      <div class="questionSection" id="question33" style="display:none"></div>
-      <div class="questionSection" id="question34" style="display:none"></div>
-      <div class="questionSection" id="question35" style="display:none"></div>
-      <div class="questionSection" id="question36" style="display:none"></div>
-      <div class="questionSection" id="question37" style="display:none"></div>
-      <div class="questionSection" id="question38" style="display:none"></div>
-      <div class="questionSection" id="question39" style="display:none"></div>
-      <div class="questionSection" id="question40" style="display:none"></div>
-      <div class="questionSection" id="question41" style="display:none"></div>
-      <div class="questionSection" id="question42" style="display:none"></div>
-      <div class="questionSection" id="question43" style="display:none"></div>
-      <div class="questionSection" id="question44" style="display:none"></div>
-      <div class="questionSection" id="question45" style="display:none"></div>
-      <div class="questionSection" id="question46" style="display:none"></div>
-      <div class="questionSection" id="question47" style="display:none"></div>
-      <div class="questionSection" id="question48" style="display:none"></div>
-      <div class="questionSection" id="question49" style="display:none"></div>
-      <div class="questionSection" id="question50" style="display:none"></div>
-   
-   
-      <div class="container-lg" id= "navigateQuestions" >
-      
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question1')">
-         <strong> 01</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question2')">
-          <strong>02</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question3')">
-          <strong>03</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question4')">
-          <strong>04</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question5')">
-          <strong>05</strong>
-        </button>
-           <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question6')">
-          <strong>06</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question7')">
-          <strong>07</strong>
-        </button>
-                <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question8')">
-          <strong>08</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question9')">
-          <strong>09</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question10')">
-          <strong>10</strong>
-        </button>
-   
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question11')">
-          <strong>11</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question12')">
-          <strong>12</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question13')">
-          <strong>13</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question14')">
-          <strong>14</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question15')">
-          <strong>15</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question16')">
-          <strong>16</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question17')">
-          <strong>17</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question18')">
-          <strong>18</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question19')">
-          <strong>19</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute " onclick = "replace('question20')">
-          <strong>20</strong>
-        </button>
-        
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question21')">
-          <strong>21</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question22')">
-          <strong>22</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question23')">
-          <strong>23</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question24')">
-          <strong>24</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question25')">
-          <strong>25</strong>
-        </button>
-    
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question26')">
-          <strong>26</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question27')">
-          <strong>27</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question28')">
-          <strong>28</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question29')">
-          <strong>29</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute " onclick = "replace('question30')">
-          <strong>30</strong>
-        </button>
-     
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question31')">
-          <strong>31</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question32')">
-          <strong>32</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question33')">
-          <strong>33</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question34')">
-          <strong>34</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question35')">
-          <strong>35</strong>
-        </button>
-         
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question36')">
-          <strong>36</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question37')">
-          <strong>37</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question38')">
-          <strong>38</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question39')">
-          <strong>39</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute " onclick = "replace('question40')">
-          <strong>40</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question41')">
-          <strong>41</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question42')">
-          <strong>42</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question43')">
-          <strong>43</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question44')">
-          <strong>44</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question45')">
-          <strong>45</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question46')">
-          <strong>46</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question47')">
-          <strong>47</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question48')">
-          <strong>48</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute" onclick = "replace('question49')">
-          <strong>49</strong>
-        </button>
-        <button type="button" class="btn btn-success btn-lg btn-absolute " onclick = "replace('question50')">
-          <strong>50</strong>
-        </button>
-   
-      <div  id ="submitbutton" onclick="submit()" ><h4><strong>SUBMIT<strong></h4></div>
-        <div id ="result" style="position: absolute;  height: 70px; width:100px; background-color: white ;"></div>
-      </div>
- 
- 
-    
-<!-- 
-     <script >
-   const name = prompt("Please input your name")
+ if (location.href == "http://127.0.0.1:5500/tescomcbtor.html" || location.href.endsWith("tescomcbtor.html")  )  {
+   const username = prompt("Please input your name")
    const OgNumber = prompt("Please input your OgNumber")
-   document.getElementById("name").innerHTML = "Welcome " + `${name}` + "              OgNum: " + `${OgNumber}`
-
-
-
+                      
+   document.getElementById("name").innerHTML = `<br>Welcome ${username}  OgNumber: ${OgNumber}`
+  }
 
      function submit (){
     if (confirm("Are you sure you want to submit?") == true){
@@ -268,8 +11,16 @@
     } 
      }
 
+     
+function checkResult () {
+    const password = prompt("please enter password")
 
-
+    if (password === "TESCOMCBT"){
+     return  location.href = "./resultspage.html" 
+    } else {
+      return prompt("incorrect password")
+    }
+}
 
      let timeleft = 1799
     let minutes = 29;
@@ -278,7 +29,7 @@
       function timer() {
          
    document.getElementById("progressBar").value = timeleft
-    document.getElementById("demo").innerHTML =  minutes+ "m " + seconds + "s ";
+    document.getElementById("demo").innerHTML = `<h5>${minutes}  m   ${seconds}  s </h5>`
     timeleft -= 1
  
  //console.log(minutes, seconds, timeleft)
@@ -304,11 +55,7 @@
     }
  
   }
-   setInterval("timer();", 1000);
-
-
-
-
+   setInterval("timer()", 1000);
     
     const  questions= [
         {
@@ -780,40 +527,36 @@ document.getElementById("question" + `${i+1}`).style.display="none";
  
     
 const arrayOfFormattedQuestions = []
-
 for (let i=0; i<questions.length; i++ ){
  
-  const formattedQuestions = `<div class = "list group-item"><h2>${questions[i].question}</h2></div>
-        <div class ="radiowrapper" >
-        <input type = "radio" id= "radio1" name="flexRadioDefault" >
-        <label for="radio1"><h3>${questions[i].option1.choice}</h3></label> 
+     
+     const formattedQuestions = `<div class = "list group-item"><h2>${questions[i].question}</h2></div>
+        <div class ="radiowrapper">
+        <input type = "radio" id= "radio${i+1}" name="flexRadioDefault${i+1}" value = "${questions[i].option1.value}" >
+        <label for='radio${i+1}' ><h3>${questions[i].option1.choice}</h3></label> 
         </div>
-        <div class ="radiowrapper"  >
-        <input type = "radio" id= "radio1" name="flexRadioDefault" >
-        <label for="radio1"><h3>${questions[i].option2.choice}</h3></label> 
+        <div class ="radiowrapper">
+        <input type = "radio"  id= "radio${i+2}"  name="flexRadioDefault${i+1}" value = "${questions[i].option2.value}" >
+        <label for="radio${i+2}" ><h3>${questions[i].option2.choice}</h3></label> 
         </div>
-        <div class ="radiowrapper" >
-        <input type = "radio" id= "radio1" name="flexRadioDefault" >
-        <label for="radio1"><h3>${questions[i].option3.choice}</h3></label> 
+        <div class ="radiowrapper">
+        <input type = "radio"  id= "radio${i+3}"  name="flexRadioDefault${i+1}" value = "${questions[i].option3.value}" >
+        <label for="radio${i+3}"><h3>${questions[i].option3.choice}</h3></label> 
         </div> 
-        <div class ="radiowrapper" >
-        <input type = "radio" id= "radio1" name="flexRadioDefault" >
-        <label for="radio1"><h3>${questions[i].option4.choice}</h3></label> 
+        <div class ="radiowrapper">
+        <input type = "radio"  id= "radio${i+4}" name="flexRadioDefault${i+1}" value = "${questions[i].option4.value}"  >
+        <label for="radio${i+4}"><h3>${questions[i].option4.choice}</h3></label> 
         </div>
-        `;      
-              
-    arrayOfFormattedQuestions.push(formattedQuestions)
-           //console.log(formattedQuestions)
+        `      
+                    
+           arrayOfFormattedQuestions.push(formattedQuestions)
+          //  console.log(document.getElementById("radio").value)
 }
-
-
-//console.log(arrayOfFormattedQuestions)
 
 const arrayOfQuestionsDiv = []
 
 for (let i =0; i< questions.length; i++){
         arrayOfQuestionsDiv.push(document.getElementById("question" + `${i+1}`))
-   //  console.log(arrayOfQuestionsDiv)
     }
       
     
@@ -837,31 +580,68 @@ for (let i =0; i< questions.length; i++){
          return arr
       }
 
-     shuffle(arrayOfFormattedQuestions)
+     shuffle(arrayOfFormattedQuestions) 
   
+
+    //  function displayRadioValue() {
+    //   document.getElementById("result").innerHTML = "";
+    //   var ele = document.getElementsByTagName('input');
+        
+    //   for(i = 0; i < ele.length; i++) {
+            
+    //       if(ele[i].type="radio") {
+            
+    //           if(ele[i].checked){
+    //               document.getElementById("result").innerHTML += ele[i].name + " Value: "  + ele[i].value + "<br>";
+    //       }
+    //     }
+    //   }
+    // }
+    
+    // displayRadioValue()
+
+    
+
 for (let i=0; i< arrayOfQuestionsDiv.length; i++){
 
 arrayOfQuestionsDiv[i].innerHTML = arrayOfFormattedQuestions[i] 
-} 
-
-
-function checkResult () {
-     const password = prompt("please enter password")
-
-     if (password === "TESCOMCBT"){
-      return  location.href = "./answerssubmitted.html" 
-     } else {
-       return "incorrect password"
-     }
-
 
 }
 
 
+// function displayRadioValue() {
+  //  document.getElementById("result").innerHTML = "hiiiiiii";
+    // let ele = document.getElementsByTagName('input');
+      
+    // for(i = 0; i < ele.length; i++) {
+          
+    //     if(ele[i].type="radio") {
+          
+    //         if(ele[i].checked){
+    //             document.getElementById("result").innerHTML += ele[i].name + " Value: "  + ele[i].value + "<br>";
+    //     }
+    //   }
+    // }
+//   }
+  
+//   displayRadioValue()
 
-    //   document.getElementById("question20").innerHTML = formattedQuestions;
-    </script> -->
-     <!-- <script  src="questions.js"></script> -->
-  </body>
-  <script type="text/javascript" src="script.js"></script>
- </html>
+
+console.log(document.getElementsByTagName('input').value )
+//document.querySelectorAll('input[type="radio"]')
+  // prompt(document.getElementById(`radio${i+1}`).value )
+  
+
+
+
+// let score = 0
+//  function count () {
+//    document.querySelectorAll('input[type="radio"]:checked').forEach(radioChecked => {
+//     score += parseInt(radioChecked.value)
+//     console.log(radioChecked.value)
+//     document.getElementById("result").innerHTML = score
+//     prompt(score)
+//    return console.log(score);
+//    })
+//  }
+//  count()
