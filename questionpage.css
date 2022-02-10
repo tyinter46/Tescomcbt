@@ -77,6 +77,13 @@ cursor: pointer;
 background-color: ivory;
 }
 
+form{
+    position: inline-block;
+    margin: 250px 50px 50px 550px;
+    width: 400px;
+}
+
+
 #timer{
    margin-left: auto;
    padding: 0%;

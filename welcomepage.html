@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome and Registration Page</title>
+    <link    type="text/css"    rel="stylesheet"    href="BOOTSTRAP/css/bootstrap.min.css"  />
+    <link type="text/css" rel="stylesheet" href="questionpage.css" />
+    <script type="text/javascript" src="script.js"></script>
+    </head>
+<body>
+
+    <form class="form-group" action="./tescomcbtor.html"  onsubmit="submitAndStart()">
+          <div>
+        <input type="text" id="userName" placeholder="FULL NAME" name = "uname"></input>
+          </div>
+
+          <div>
+        <input type="text" id = "ognumber" placeholder="OG-NUMBER" name = "ognum"></input>
+     </div>
+     <div>
+        <input type="submit" value="Submit & Start" ></input>
+        </div>
+    </form>
+    <script>
+        function submitAndStart () {
+  e.preventDefault()
+  let username = uname
+ let ogNumber = ognum
+  sessionStorage.setItem("username", username)
+  sessionStorage.setItem("ogNumber", ogNumber)
+//   location.href ="./tescomcbtor.html"
+  }
+    </script>
+</body>
+
+</html>
