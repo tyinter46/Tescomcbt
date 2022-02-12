@@ -8,6 +8,7 @@
 //   }
 
 
+
 if (    location.href.endsWith("tescomcbtor.html")) {
    var username = prompt("Please input your name");
   var ogNumber = prompt("Please input your OgNumber")
@@ -18,13 +19,12 @@ if (    location.href.endsWith("tescomcbtor.html")) {
 
 
  document.getElementById(  "name"  ).innerHTML = `<br>Welcome ${username}  OgNumber: ${ogNumber}`;
-let timeleft = 10;
-let minutes = 0;
-let seconds = 10;
+let timeleft = 1199;
+let minutes = 29;
+let seconds = 59;
 function timer() { 
  document.getElementById("progressBar").value = timeleft;
- document.getElementById(   "demo"
- ).innerHTML = `<h5>${minutes}  m   ${seconds}  s </h5>`;
+ document.getElementById(   "demo" ).innerHTML = `<h5>${minutes}  m   ${seconds}  s </h5>`;
  timeleft -= 1;
 
  //console.log(minutes, seconds, timeleft)
@@ -459,15 +459,16 @@ const questions = [
 ];
 
 
-
 function replace(idOfdivToShow) {
   for (let i = 0; i < questions.length; i++) {
     if (idOfdivToShow == "question" + `${i + 1}`) {
       document.getElementById(idOfdivToShow).style.display = "block";
+       
     } else {
       document.getElementById("question" + `${i + 1}`).style.display = "none";
     }
   }
+  return document.getElementById(idOfdivToShow).id
 }
 
 const arrayOfFormattedQuestions = [];
@@ -522,11 +523,12 @@ function shuffle(arr) {
   }
   return arr;
 }
-
 shuffle(arrayOfFormattedQuestions);
+
 for (let i = 0; i < arrayOfQuestionsDiv.length; i++) {
   arrayOfQuestionsDiv[i].innerHTML = arrayOfFormattedQuestions[i];
 }
+
 //put all radio buttons in an array called inputs
 const inputs = document.getElementsByTagName("input");
 const inputArray = [...inputs]
@@ -542,12 +544,26 @@ while (i < 200){
      k++
 }
 
+
+
+
+function next () {
+
+  for (let questionDiv of arrayOfQuestionsDiv){
+    if (questionDiv.style.display  )
+    console.log(questionDiv)
+  }
+ 
+}
+next()
+
+
+
+
+
+
 // end of if statement
  }
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', event =>{
   const radioElems = document.querySelectorAll('input[type = "radio"')
@@ -559,9 +575,14 @@ document.addEventListener('DOMContentLoaded', event =>{
     document.querySelectorAll('input[type="radio"]:checked').forEach(radioChecked =>{
       score += parseInt(radioChecked.value, 10)
        sessionStorage.setItem("score", score)
+
           })
   }
+     
 })
+
+
+
 
 console.log(username)
 console.log(ogNumber)
@@ -582,8 +603,56 @@ function submit() {
   if (confirm("Are you sure you want to submit?") == true) {
    
       location.href = "./answerssubmitted.html";
-     
+      
   }
 }
+
+
+
+
+// function focusOnAParticularDiv(divId)
+// {
+//     switch(divId)    {
+//         case 'next1':
+           
+//             // document.getElementById('question2').style.display = 'none';
+//             // document.getElementById('question3').style.display = 'none';
+//             // document.getElementById('question4').style.display = 'none';
+//             // document.getElementById('question5').style.display = 'none';
+           
+//             for (let i = 1; i < 50; i++) {
+//             document.getElementById("question" + `${i + 1}`).style.display = "none";
+//             document.getElementById("next" + `${i + 1}`).style.display ="none"
+//                                           }
+//           document.getElementById('question' + `${i + 1}`).style.display = 'block';
+//           document.getElementById("next" + `${i + 1}`).style.display ="block"
+//            break;
+
+//         // case 'next2': 
+
+        // for (let i = 1; i < 51 ; i++) {
+        //  document.getElementById("question" + `${i + 1}`).style.display =  none;
+        //                                                 }
+        //      document.getElementById('question2').style.display = 'block';
+        //     break;
+
+
+        // case 'next3':
+           
+        // for (let i = 1; i < 51 ; i++) {
+        //   document.getElementById("question" + `${i + 1}`).style.display = none;
+        //                                                  }
+        //       document.getElementById('question3').style.display = 'block';
+        //      break;
+ 
+//     }
+// }
+
+
+
+
+
+
+
 const score = sessionStorage.getItem("score")
 console.log(score)
