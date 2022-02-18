@@ -13,7 +13,7 @@ if (    location.href.endsWith("tescomcbtor.html")) {
 
   const password = prompt("Input password to continue")
 
-  if (password == "IT_DEPARTMENT"){
+  if (password == "DEPARTMENT_OF_IT"){
 
    var username = prompt("Please input your name");
   var ogNumber = prompt("Please input your OgNumber")
