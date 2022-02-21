@@ -7,32 +7,59 @@
     <title>Welcome and Registration Page</title>
     <link    type="text/css"    rel="stylesheet"    href="BOOTSTRAP/css/bootstrap.min.css"  />
     <link type="text/css" rel="stylesheet" href="questionpage.css" />
-    <script type="text/javascript" src="script.js"></script>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
     </head>
 <body>
+  <div id="resultspagetopbar" style="height: 49px;" >
+    
+    <h3> WELCOME TO TESCOM CBT FOR PROSPECTIVE PRINCIPALS AND VICE-PRINCIPALS</h3>
+    <div style="margin-left: -1400px; margin-top: -48px; position:float"  ><img src="OGLOGO.png" alt=""  ></div>
+  </div>
 
-    <form class="form-group" action="./tescomcbtor.html"  onsubmit="submitAndStart()">
-          <div>
-        <input type="text" id="userName" placeholder="FULL NAME" name = "uname"></input>
+
+  <div class="container" style = "align-self: center; margin-top: 90px; padding-top: 60px; opacity:85%; background-color: rgb(0, 87, 58); text-align: center; border-top:  2px solid #ffffff;  border-bottom: 2px solid #ffffff; height: 300px;" >
+          <div style="padding: 5px;">
+        <input type="text" id="userName" placeholder="FULL NAME" name = "uname" style="width: max-content;"></input>
           </div>
 
-          <div>
+          <div style="padding: 5px;">
         <input type="text" id = "ognumber" placeholder="OG-NUMBER" name = "ognum"></input>
-     </div>
-     <div>
-        <input type="submit" value="Submit & Start" ></input>
+         </div>
+
+         <div style="padding: 5px;">
+          <input type="text" id = "filenumber" placeholder="FILENUMBER" name = "fnum"></input>
+           </div>
+
+        <div style="padding: 5px;">
+        <input type="submit" value="Submit & Start" onclick="submitAndStart()"></input>
         </div>
-    </form>
+  
+  </div> 
+
     <script>
-        function submitAndStart () {
-  e.preventDefault()
-  let username = uname
- let ogNumber = ognum
-  sessionStorage.setItem("username", username)
+ function submitAndStart () {
+
+ let userName = document.getElementById("userName").value
+ let ogNumber = document.getElementById("ognumber").value
+ let fileNumber = document.getElementById("filenumber").value
+if (userName == "" || ogNumber == "" || fileNumber == ""){
+  prompt("please fill all fields")
+  return
+}
+  sessionStorage.setItem("userName", userName)
   sessionStorage.setItem("ogNumber", ogNumber)
-//   location.href ="./tescomcbtor.html"
-  }
+  sessionStorage.setItem("fileNumber", fileNumber)
+
+//   let password = prompt("please enter a password")
+
+//   if(password =="password"){
+  location.href = "./tescomcbtor.html"
+//   }else {
+//    return 
+//  } 
+ }
     </script>
+      <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

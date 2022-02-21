@@ -1,31 +1,14 @@
-// function submitAndStart () {
-//   e.preventDefault()
-//   var username = document.getElementById("userName").value 
-//  var ogNumber = document.getElementById("ognumber").value
-//   sessionStorage.setItem("username", username)
-//   sessionStorage.setItem("ogNumber", ogNumber)
-//   location.href.endsWith("tescomcbtor.html")
-//   }
-
-
 
 if (    location.href.endsWith("tescomcbtor.html")) {
 
-  const password = prompt("Input password to continue")
 
-  if (password == "IT_DEPARTMENT"){
+let userName = sessionStorage.getItem("userName")
+let ogNumber = sessionStorage.getItem("ogNumber")
 
-   var username = prompt("Please input your name");
-  var ogNumber = prompt("Please input your OgNumber")
-  var fileNumber = prompt("Please input your file number")
-
- sessionStorage.setItem("username", username)
- sessionStorage.setItem("ogNumber", ogNumber)
- sessionStorage.setItem("fileNumber", fileNumber)
   
 
 
- document.getElementById(  "name"  ).innerHTML = `<br><h3>Welcome ${username} || OgNumber: ${ogNumber}</h3>`;
+ document.getElementById(  "name"  ).innerHTML = `<br><h3>Welcome ${userName} || OgNumber: ${ogNumber}</h3>`;
 let timeleft = 1199;
 let minutes = 29;
 let seconds = 59;
@@ -34,7 +17,6 @@ function timer() {
  document.getElementById(   "demo" ).innerHTML = `<h5>${minutes}  m   ${seconds}  s </h5>`;
  timeleft -= 1;
 
- //console.log(minutes, seconds, timeleft)
 
  if (seconds == 0) {
    minutes -= 1;
@@ -56,8 +38,7 @@ function timer() {
 }
 setInterval("timer()", 1000);
 
-const futureDate = new Date
-console.log(futureDate.getDay())
+
 const questions = [
   {
     question: "_____________ is the body of rules and regulations governing the rights, duties and obligations of the public servants.",
@@ -583,7 +564,7 @@ function prev (){
        }
        return
       }
-}
+  }
 } 
 //put all radio buttons in an array called inputs
 const inputs = document.getElementsByTagName("input");
@@ -602,26 +583,36 @@ while (i < 200){
 }
 
 
-// let l = 0
-//   for (let j=0; j<200; j++) {
-//     l++   
-//     if (j < 51){
-//   inputArray[j].addEventListener("click", ()=>{
-//   document.getElementById("button" + `${l}` ).style.backgroundColor ="blue"
-  
-// })
- 
-//   } else {
-//     break
-//   }
+const arrayOfFourRadioButtons = [] 
+    for (let i =0; i<50; i++){
 
-//   }
-  
-  
-       
-   }  else {
-     location.href = "./tescomcbtor.html"
-   } 
+     arrayOfFourRadioButtons.push ([]);
+   
+    }
+
+    let l = 0 
+    let m = 0
+    let n = 0
+    while (n<50){
+    for (let j =0; j<4; j++){
+        arrayOfFourRadioButtons[n].push(inputArray[m])
+           m++
+    }
+    n++
+    l++
+  }
+ 
+
+    for (let eachArray of arrayOfFourRadioButtons){
+      for (let radioButtons of eachArray ){
+             radioButtons.addEventListener("click", ()=>{
+      
+              document.getElementById("button" +`${arrayOfFourRadioButtons.indexOf(eachArray)+1}`).style.backgroundColor = "blue"
+              })
+         }
+
+    }
+
 // end of if statement
  }
 
@@ -643,14 +634,13 @@ document.addEventListener('DOMContentLoaded', event =>{
 
 
 function checkResult() {
-  const password = prompt("please enter password");
-  if (password === "TSC_ADMIN") {
+  // const password = prompt("please enter password");
+  // if (password === "TSC_ADMIN") {
     location.href = "./resultspage.html";
- //document.getElementById("score").innerHTML = sessionStorage.getItem("score")
- } else {
-   return
-       }
-
+//  //document.getElementById("score").innerHTML = sessionStorage.getItem("score")
+//  } else {
+//    return
+//        }
 }
 
 
