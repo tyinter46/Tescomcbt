@@ -90,7 +90,7 @@ background-color: ivory;
    
     width: 60px;
     height: 50x;
-    position: absolute;
+    position: fixed;
     margin-right: 1000px;
     margin-bottom: 300px;
     margin-top: 110px;
@@ -110,7 +110,7 @@ background-color: ivory;
     background-color: #fdf90a;
     width: 60px;
     height: 50px;
-    position:absolute;
+    position:fixed;
    z-index: 2;
     /* margin-right: 100px; */
     margin-left: 1290px;
